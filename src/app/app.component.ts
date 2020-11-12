@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import swal from 'sweetalert2';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bootstrap-tipo-doc-app';
+  prueba():void{
+    swal.fire('Any fool can use a computer');
+  }
 }
