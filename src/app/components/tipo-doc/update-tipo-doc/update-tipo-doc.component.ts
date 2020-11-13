@@ -14,6 +14,7 @@ export class UpdateTipoDocComponent implements OnInit {
   constructor(private tipodocService:TipoDocService,private router:Router, private activatedRoute:ActivatedRoute){}
   ngOnInit(): void {
     console.log("log");
+    this.cargarTipoDoc();
   }
   cargarTipoDoc():void{
     this.activatedRoute.params.subscribe(params=>{

@@ -8,6 +8,7 @@ import { AddTipoDocComponent } from './components/tipo-doc/add-tipo-doc/add-tipo
 import { ListarTipoDocComponent } from './components/tipo-doc/listar-tipo-doc/listar-tipo-doc.component';
 import { UpdateTipoDocComponent } from './components/tipo-doc/update-tipo-doc/update-tipo-doc.component';
 import {HttpClientModule} from '@angular/common/http';
+import { FormsModule} from '@angular/forms';
 import { TipoDocService } from './services/tipo-doc.service';
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TipoDocService } from './services/tipo-doc.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [TipoDocService],
   bootstrap: [AppComponent]

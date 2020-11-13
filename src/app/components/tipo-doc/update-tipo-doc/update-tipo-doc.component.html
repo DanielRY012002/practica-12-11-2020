@@ -1,1 +1,10 @@
-<p>update-tipo-doc works!</p>
+<div class="update">
+  <form>
+    <div class="form-group">
+      <label for="N1">Tipo Documento</label>
+      <input type="email" class="form-control" id="N1"  [(ngModel)]="tipodoc.nombre" placeholder="Ingresar Nombre" name="nombre">
+    </div>
+    <button color="primary" class="btn btn-success" (click)="modificarTipoDoc()">Modificar</button>
+    <button type="button" class="btn btn-danger" routerLink="/listar">Cancelar</button>
+  </form>
+</div>

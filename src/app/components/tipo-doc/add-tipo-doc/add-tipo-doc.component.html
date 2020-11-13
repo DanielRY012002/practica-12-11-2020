@@ -1,1 +1,10 @@
-<p>add-tipo-doc works!</p>
+<div class="add">
+  <form>
+    <div class="form-group">
+      <label for="N1">Tipo Documento</label>
+      <input type="email" class="form-control" id="N1"  [(ngModel)]="tipodocModel.nombre" placeholder="Ingresar Nombre" name="nombre">
+    </div>
+    <button color="primary" class="btn btn-success" (click)="create()">Registrar</button>
+    <button type="button" class="btn btn-danger" routerLink="/listar">Cancelar</button>
+  </form>
+</div>
